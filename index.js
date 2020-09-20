@@ -40,6 +40,8 @@ showWeatherData = (weatherData) => {
   document.getElementById('city-name').innerText = weatherData.name;
 
   document.getElementById('weather-type').setAttribute("src", fullSrc);
+  
+   document.getElementById("weather-description").innerText = weatherData.weather[0].main;
 
   document.getElementById('temp').innerText = weatherData.main.temp;
 
